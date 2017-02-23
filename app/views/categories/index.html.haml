@@ -1,0 +1,13 @@
+- @categories.each do |category|
+	Category: 
+	= category.name
+	%br
+	Brief:
+	= category.description
+	%br
+	Rate per night
+	= category.rate_per_night
+	%br
+	= link_to "See Rooms ", ""
+	%br
+	%br

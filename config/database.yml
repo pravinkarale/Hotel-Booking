@@ -1,0 +1,26 @@
+
+#
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: pravin
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: HotelBooking_development
+
+
+test:
+  <<: *default
+  database: HotelBooking_test
+
+production:
+  <<: *default
+  database: HotelBooking_production
+  username: HotelBooking
+  password: <%= ENV['HOTELBOOKING_DATABASE_PASSWORD'] %>
+
+
