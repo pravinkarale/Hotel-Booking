@@ -1,0 +1,1 @@
+1) on the booking form radio button is disable for which current room stock is 0

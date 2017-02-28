@@ -3,8 +3,7 @@ class CreateRooms < ActiveRecord::Migration
     create_table :rooms do |t|
     	t.integer :category_id
     	t.string :room_type
-    	t.integer :current_stock
-    	t.integer :stock
+    	t.string :room_no
       t.timestamps null: false
     end
   end
